@@ -1,0 +1,362 @@
+$font-stack:   Roboto, sans-serif
+
+// body
+// 	background: #ff0
+// 	+css-lock(16, 50, 600, 1000)
+// 	line-height: 1.4
+
++font('hMedium',HelveticaNeue-Medium)
+
+=font
+  font-family: hMedium,sans-serif
+  
+img
+  width: 100%
+  
+.maske
+  position: absolute
+  z-index: 2000
+  overflow: hidden
+  width: 100%
+  height: 30%
+  background: #000
+  mix-blend-mode: darken
+  &__inner
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 140vw
+    height: 50vh
+    transform: translate(-50%, -50%) scale(0.01)
+    border-radius: 50%
+    background: #fff
+    animation-name: slidein
+    animation-duration: 3s
+    animation-fill-mode: forwards
+  @keyframes slidein
+    0%
+      transform: translate(-50%, -50%) scale(0.01)
+    100%
+      transform: translate(-50%, -50%) scale(1)
+
+.hero
+  padding: 26px 0 103px
+  background: url('../img/bg.png'), url('../img/2-layers.png') no-repeat
+  background-size: cover
+  +r(700)
+    padding: 26px 0 40px 
+
+.header
+  position: relative
+  top: -100px
+  margin-bottom: 126px
+  +clr
+  animation-name: show
+  animation-duration: 2s
+  animation-fill-mode: forwards
+  +r(700)
+    margin-bottom: 50px
+  @keyframes show
+    from
+      top: -100px
+    to
+      top: 0px    
+  &__left
+    float: left
+    +r(895)
+      float: none
+      text-align: center
+    .logo
+      display: inline-block
+      max-width: 46px
+      cursor: pointer
+      vertical-align: middle
+  &__right
+    float: right
+    +r(895)
+      float: none
+      text-align: center
+    .menu
+      position: relative
+      top: 31px
+      display: inline-block
+      vertical-align: middle
+      a
+        font-family: $font-stack
+        font-size: 18px
+        font-weight: 400
+        display: inline-block
+        margin-left: 60px
+        text-decoration: none
+        color: #fff
+        +r(895)
+          display: block
+          margin: 15px 0 20px
+          text-align: center
+
+.content
+  +clr 
+  &__left
+    float: left
+    position: relative
+    left: -1000px
+    max-width: 48%
+    opacity: 0
+    animation-name: contentl
+    animation-duration: 3s
+    animation-fill-mode: forwards
+    +r(700)
+      float: none
+      max-width: 70%
+      margin: 0 auto 56px
+      text-align: center
+    @keyframes contentl
+      0%
+        left: -500px
+        opacity: 0
+      100%
+        left: 0
+        opacity: 1
+    .built
+      font-family: $font-stack
+      font-size: 38px
+      font-weight: 500
+      margin: 117px 0 49px
+      color: #fff
+      +r(700)
+        margin: 0 0 49px
+        font-family: $font-stack
+        font-size: 24px
+    .lorem
+      font-family: $font-stack
+      font-size: 20px
+      font-weight: 400
+      line-height: 36px
+      margin-bottom: 96px
+      color: #fff
+      +r(700)
+        margin-bottom: 40px
+    .btn-work
+      +font
+      font-size: 18px
+      font-weight: 500
+      line-height: 65px
+      position: relative
+      display: inline-block
+      overflow: hidden
+      box-sizing: border-box
+      height: 65px
+      padding: 0 33px
+      cursor: pointer
+      transition: color ease .3s
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      color: #fff
+      border: 2px solid #fff
+      border-radius: 5px
+      background: transparent
+      +r(700)
+        padding: 0 
+      &:hover, &:focus, &:active
+        border-radius: 50px
+        outline: 0
+        +r(700) 
+          border-radius: 20px 
+  &__right
+    float: right
+    position: relative
+    right: -100px
+    cursor: pointer
+    animation-name: contentr
+    animation-duration: 3s
+    animation-fill-mode: forwards
+    +r(700)
+      float: none
+      max-width: 60%
+      margin: 0 auto
+    @keyframes contentr
+      0%
+        right: -100px
+        opacity: 0
+      100%
+        right: 0
+        opacity: 1 
+    .photo:hover
+      +scale(0.9)
+    	
+.works
+  padding: 99px 0 0
+  +r(700)
+    padding: 40px 0 0
+  &__title
+    font-family: Roboto
+    font-size: 18px
+    font-weight: 400
+    cursor: pointer
+    text-align: center
+    color: #ff8400
+    +r(700)
+      font-size: 24px
+  &__titles
+    font-family: Roboto
+    font-size: 36px
+    font-weight: 700
+    margin-top: 24px
+    cursor: pointer
+    text-align: center
+    color: #343434
+  &__gallery
+    display: grid
+    margin-top: 82px
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 345px 345px
+    +r(1024)
+      grid-column-gap: 49px
+    +r(700)
+      display: grid
+      margin-top: 40px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 345px 345px 345px
+    +r(490)
+      margin-top: 40px
+      grid-template-columns: 1fr
+      grid-template-rows: 345px 345px 345px 345px 345px 345px
+    .item
+      text-align: center
+      &__icon
+        width: 160px
+        height: 147px
+        margin: 0 auto
+      &__icon-food
+        background: url('../img/item-1.png') no-repeat 50% 50%
+      &__icon-cart
+        background: url('../img/ic-cart (2).png') no-repeat 50% 50%
+      &__icon-setting
+        background: url('../img/ic-setting.png') no-repeat 50% 50%
+      &__icon-user
+        background: url('../img/ic-user.png') no-repeat 50% 50%
+      &__icon-edit
+        background: url('../img/ic-edit.png') no-repeat 50% 50%
+      &__icon-email
+        background: url('../img/ic-email.png') no-repeat 50% 50%
+      &__title
+        font-family: Roboto
+        font-size: 18px
+        font-weight: 500
+        margin: 24px 0 44px
+        cursor: pointer
+        color: #343434
+      &__description
+        font-family: Roboto
+        font-size: 18px
+        font-weight: 400
+        color: #5c5c5c
+
+.notification
+  padding: 150px 0
+  background: url('../img/bg-2.png') no-repeat
+  background-size: cover
+  +r(700)
+    padding: 40px 0 
+  &__title
+    font-family: Roboto
+    font-size: 30px
+    font-weight: 700
+    margin-bottom: 28px
+    text-align: center
+    text-transform: uppercase
+    color: white
+    +r(570)
+      font-size: 24px
+  &__description
+    font-family: Roboto
+    font-size: 18px
+    font-weight: 500
+    line-height: 36px
+    max-width: 760px
+    margin: 0 auto 97px
+    text-align: center
+    color: white
+    +r(570)
+      font-size: 16px
+      margin-bottom: 40px 
+  &__form
+    text-align: center
+    font-size: 0
+    input[type='email']
+      box-sizing: border-box
+      width: 52%
+      margin-right: 28px
+      padding: 25px 0 23px 31px
+      border: 2px solid white
+      border-radius: 5px
+      outline: none
+      background: none
+      +r(570)
+        width: 80%
+        margin: 0 0 20px 0
+      +placeholder
+        font-family: Roboto
+        font-size: 16px
+        font-weight: 400
+        color: #fffefe
+    .btn-ready
+      font-family: Roboto
+      font-size: 18px
+      font-weight: 400
+      position: relative
+      display: inline-block
+      overflow: hidden
+      box-sizing: border-box
+      padding: 25px 53px 26px 46px
+      cursor: pointer
+      transition: background-color ease .3s, color ease .3s
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      color: #ff8400
+      border-radius: 5px
+      background-color: white
+      box-shadow: 0 0 25px rgba(255, 132, 0, 0.65)
+      &:hover, &:focus, &:active
+        border-radius: 50px
+        outline: 0  
+
+.footer
+  padding: 63px 0 41px
+  .line
+    width: 100%
+    height: 3px
+    margin-bottom: 37px
+    background-color: #d8d8d8
+  .footer__content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    +r(490)
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: 50px 50px
+    .footer__left
+      font-family: Roboto
+      font-size: 16px
+      font-weight: 400
+      color: #5c5c5c
+      align-self: center
+      justify-self: start
+      +r(490)
+        justify-self: center
+    .footer__right
+      justify-self: end
+      display: grid
+      grid-column-gap: 39px
+      grid-template-columns: 1fr 1fr 1fr
+      +r(490)
+        justify-self: center
+      .facebook
+        max-width: 17px
+      .google
+        max-width: 40px
+      .instagram
+        max-width: 31px

@@ -1,0 +1,36 @@
+---
+<!-- title: Index page -->
+text: Lorem ipsum is simply dummy
+descr: Lorem ipsum is simply dummy text of theprinting and typesetting industry
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- {# variable example #} -->
+	<!-- <h1>{{title}}</h1> -->
+
+    <!-- <h2>Hello</h2> -->
+	
+	
+	{% include "partials/_header.html" %}
+	
+	
+	{% include "partials/_content.html" %}
+
+	
+	{% include "partials/_footer.html" %}
+
+	<!-- {# mixin example #}
+	{{mixins.icon('facebook')}}
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #} -->
+
+{% endblock %}
