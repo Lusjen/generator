@@ -1,7 +1,24 @@
 ---
 <!-- title: Index page -->
-text: Lorem ipsum is simply dummy
-descr: Lorem ipsum is simply dummy text of theprinting and typesetting industry
+gallery:
+ - image: ../../img/item-1.png
+   text: Lorem ipsum is simply dummy
+   descr: Lorem ipsum is simply dummy text of the printing and typesetting industry
+ - image: ../../img/ic-cart.png
+   text: Lorem ipsum is simply dummy
+   descr: Lorem ipsum is simply dummy text of the printing and typesetting industry
+ - image: img/ic-setting.png
+   text: Lorem ipsum is simply dummy
+   descr: Lorem ipsum is simply dummy text of the printing and typesetting industry
+ - image: ../../img/ic-user.png
+   text: Lorem ipsum is simply dummy
+   descr: Lorem ipsum is simply dummy text of the printing and typesetting industry
+ - image: ../../img/ic-edit.png
+   text: Lorem ipsum is simply dummy
+   descr: Lorem ipsum is simply dummy text of the printing and typesetting industry
+ - image: ../../img/ic-email.png
+   text: Lorem ipsum is simply dummy
+   descr: Lorem ipsum is simply dummy text of the printing and typesetting industry
 ---
 
 {% extends "layouts/_layout.html" %}
@@ -23,14 +40,14 @@ descr: Lorem ipsum is simply dummy text of theprinting and typesetting industry
 	{% include "partials/_footer.html" %}
 
 	<!-- {# mixin example #}
-	{{mixins.icon('facebook')}}
+	{{mixins.icon('facebook')}} -->
 
-	{# data usage example #}
+	<!-- {# data usage example #}
 		{% import "data/data.html" as tests %}
 		
 		{% for test in tests.list %}
 		<li>{{test.title}}</li>
 		{% endfor %}
-	{# end of example #} -->
-
+	{# end of example #}
+ -->
 {% endblock %}

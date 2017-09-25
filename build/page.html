@@ -24,7 +24,7 @@
       <!-- begin hero  -->
       <div class="hero">
         <div class="container">
-          <div class="header clearfix">
+          <div class="header">
             <div class="header__left">
               <div class="logo"> <img src="img/logo.png" alt="logo"></div>
             </div>
@@ -32,10 +32,10 @@
               <nav class="menu"> <a href="#">About</a> <a href="#">Download</a> <a href="#">Workflow</a> <a href="#">Support</a> <a href="#">User Stories</a> <a href="#">Contact</a> </nav>
             </div>
           </div>
-          <div class="content clearfix">
+          <div class="content">
             <div class="content__left">
-              <h2 class="built">Built with app designers in mind</h2>
-              <p class="lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. </p> <button class="btn btn-work" data-text="How it work">
+              <h2 class="h2">Built with app designers in mind</h2>
+              <p class="h2-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. </p> <button class="btn btn_work" data-text="How it work">
 						<span>H</span>
 						<span>o</span>
 						<span>w</span>
@@ -55,42 +55,48 @@
         </div>
       </div>
       <!-- end header  -->
-      <!-- begin works  -->
+      <!--begin works  -->
       <div class="works">
         <div class="container">
           <h2 class="works__title">How it works</h2>
           <h3 class="works__titles">Lorem ipsum is simply</h3>
-          <div class="works__gallery">
-            <div class="item">
-              <div class="item__icon item__icon-food"></div>
+          <div class="gallery">
+            <!-- begin item  -->
+            <div class="item"> <img src=../../img/item-1.png class="item__icon">
               <h3 class="item__title">Lorem ipsum is simply dummy</h3>
-              <div class="item__description"> Lorem ipsum is simply dummy text of theprinting and typesetting industry </div>
+              <div class="item__description"> Lorem ipsum is simply dummy text of the printing and typesetting industry </div>
             </div>
-            <div class="item">
-              <div class="item__icon item__icon-cart"></div>
+            <!-- end item-->
+            <!-- begin item  -->
+            <div class="item"> <img src=../../img/ic-cart.png class="item__icon">
               <h3 class="item__title">Lorem ipsum is simply dummy</h3>
-              <div class="item__description"> Lorem ipsum is simply dummy text of theprinting and typesetting industry </div>
+              <div class="item__description"> Lorem ipsum is simply dummy text of the printing and typesetting industry </div>
             </div>
-            <div class="item">
-              <div class="item__icon item__icon-setting"></div>
+            <!-- end item-->
+            <!-- begin item  -->
+            <div class="item"> <img src=img/ic-setting.png class="item__icon">
               <h3 class="item__title">Lorem ipsum is simply dummy</h3>
-              <div class="item__description"> Lorem ipsum is simply dummy text of theprinting and typesetting industry </div>
+              <div class="item__description"> Lorem ipsum is simply dummy text of the printing and typesetting industry </div>
             </div>
-            <div class="item">
-              <div class="item__icon item__icon-user"></div>
+            <!-- end item-->
+            <!-- begin item  -->
+            <div class="item"> <img src=../../img/ic-user.png class="item__icon">
               <h3 class="item__title">Lorem ipsum is simply dummy</h3>
-              <div class="item__description"> Lorem ipsum is simply dummy text of theprinting and typesetting industry </div>
+              <div class="item__description"> Lorem ipsum is simply dummy text of the printing and typesetting industry </div>
             </div>
-            <div class="item">
-              <div class="item__icon item__icon-edit"></div>
+            <!-- end item-->
+            <!-- begin item  -->
+            <div class="item"> <img src=../../img/ic-edit.png class="item__icon">
               <h3 class="item__title">Lorem ipsum is simply dummy</h3>
-              <div class="item__description"> Lorem ipsum is simply dummy text of theprinting and typesetting industry </div>
+              <div class="item__description"> Lorem ipsum is simply dummy text of the printing and typesetting industry </div>
             </div>
-            <div class="item">
-              <div class="item__icon item__icon-email"></div>
+            <!-- end item-->
+            <!-- begin item  -->
+            <div class="item"> <img src=../../img/ic-email.png class="item__icon">
               <h3 class="item__title">Lorem ipsum is simply dummy</h3>
-              <div class="item__description"> Lorem ipsum is simply dummy text of theprinting and typesetting industry </div>
+              <div class="item__description"> Lorem ipsum is simply dummy text of the printing and typesetting industry </div>
             </div>
+            <!-- end item-->
           </div>
         </div>
       </div>
@@ -100,43 +106,56 @@
         <div class="container">
           <h2 class="notification__title">Receive notification now</h2>
           <p class="notification__description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor. </p>
-          <form action="" class="notification__form"> <input type="email" name="email" placeholder="Your email address ..."> <button class="btn btn-ready" data-text="I’m ready!">
-					<span>I</span>
-					<span>’</span>
-					<span>m</span>
-					<span>&nbsp;</span>
-					<span>r</span>
-					<span>e</span>
-					<span>a</span>
-					<span>d</span>
-					<span>y</span>
-					<span>!</span>
-				</button> </form>
+          <form action="" class="form"> <input type="email" name="email" placeholder="Your email address ..."> <button class="btn btn_ready" data-text="I’m ready!">
+				<span>I</span>
+				<span>’</span>
+				<span>m</span>
+				<span>&nbsp;</span>
+				<span>r</span>
+				<span>e</span>
+				<span>a</span>
+				<span>d</span>
+				<span>y</span>
+				<span>!</span>
+			</button> </form>
         </div>
       </div>
-      <!-- end notification  -->
-      <!-- begin footer  -->
+      <!-- end notification -->
+      <!--begin footer  -->
       <div class="footer">
         <div class="line"></div>
         <div class="container">
-          <div class="footer__content">
-            <div class="footer__left">
-              <p> Copyright by Comtruavip 2017 </p>
+          <div class="content-bottom">
+            <div class="content-bottom__left">
+              <p class="copyright"> Copyright by Comtruavip 2017 </p>
             </div>
-            <div class="footer__right"> <a href="#" class="social-icon">
-						<img src="img/ic-face.png" alt="facebook" class="facebook"></a> <a href="#" class="social-icon">
-						<img src="img/ic-google-plus.png" alt="google" class="google"></a> <a href="#" class="social-icon">
-						<img src="img/ic-instagram.png" alt="instagram" class="instagram"></a> </div>
+            <div class="content-bottom__right">
+              <div class="social"> <a href="#" class="social-icon">
+						
+<svg class="icon icon-face"><use xlink:href="img/sprite.svg#icon-face"></use></svg>
+
+						<!-- <img src="../../img/ic-face.svg" alt="facebook" class="facebook"> -->
+	   				</a> <a href="#" class="social-icon">
+						
+<svg class="icon icon-google-plus"><use xlink:href="img/sprite.svg#icon-google-plus"></use></svg>
+
+						<!-- <img src="../../img/ic-google-plus.svg" alt="google" class="google"> -->
+					</a> <a href="#" class="social-icon">
+						
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+
+						<!-- <img src="../../img/ic-instagram.svg" alt="instagram" class="instagram"> -->
+					</a> </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- end footer  -->
+      <!-- end footer -->
       <!-- 
 	
 <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
-
-
-	
+ -->
+      <!-- 
 		
 		
 		
@@ -144,7 +163,9 @@
 		
 		<li>Item2</li>
 		
-	 --></div>
+	
+ -->
+    </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
