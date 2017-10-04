@@ -1,10 +1,5 @@
 $font-stack: Roboto, sans-serif
 
-// body
-// 	background: #ff0
-// 	+css-lock(16, 50, 600, 1000)
-// 	line-height: 1.4
-
 +font('hMedium',HelveticaNeue-Medium)
 
 =font
@@ -152,11 +147,12 @@ img
         opacity: 0
       100%
         right: 0
-        opacity: 1 
-    .photo
-      transition: transform 2s
-      &:hover
-        +scale(0.7)
+        opacity: 1
+
+.photo
+  transition: transform 2s
+  &:hover
+    +scale(0.7)
 
 .h2
   font-family: $font-stack
@@ -180,50 +176,54 @@ img
   color: #fff
   +r(700)
     margin-bottom: 40px
-    
-.btn_work
-  +font
-  font-size: 18px
-  font-weight: 500
-  line-height: 36px
+
+.btn
   position: relative
   display: inline-block
   overflow: hidden
   box-sizing: border-box
-  height: 65px
-  padding: 0 33px
   cursor: pointer
   transition: color ease .3s
   text-align: center
   text-decoration: none
   text-transform: uppercase
-  color: #fff
-  border: 2px solid #fff
-  border-radius: 5px
-  background: transparent
-  +r(700)
-    padding: 0 
-  &:hover, &:focus, &:active
-    border-radius: 50px
-    outline: 0
-    +r(700) 
-      border-radius: 20px
+  &_work
+    +font
+    font-size: 18px
+    font-weight: 500
+    line-height: 36px
+    height: 65px
+    padding: 0 33px
+    color: #fff
+    border: 2px solid #fff
+    border-radius: 5px
+    background: transparent
+    +r(700)
+      padding: 0 
+    &:hover, &:focus, &:active
+      border-radius: 50px
+      outline: 0
+      +r(700) 
+        border-radius: 20px
+  &_ready
+    font-family: $font-stack
+    font-size: 18px
+    font-weight: 400
+    height: 65px
+    padding: 0 46px 0 27px
+    color: #ff8400
+    border-radius: 5px
+    background-color: white
+    box-shadow: 0 0 25px rgba(255, 132, 0, 0.65)
+    &:hover, &:focus, &:active
+      border-radius: 50px
+      outline: 0  
+
       
 .works
   padding: 94px 0 19px
   +r(700)
     padding: 40px 0 0
-  &__title
-    font-family: $font-stack
-    font-size: 18px
-    font-weight: 400
-    cursor: pointer
-    text-align: center
-    color: #ff8400
-    text-transform: uppercase
-    letter-spacing: 1px
-    +r(700)
-      font-size: 24px
   &__titles
     font-family: $font-stack
     font-size: 36px
@@ -233,6 +233,18 @@ img
     text-align: center
     color: #343434
     letter-spacing: 0.4px
+
+.h3
+  font-family: $font-stack
+  font-size: 18px
+  font-weight: 400
+  cursor: pointer
+  text-align: center
+  color: #ff8400
+  text-transform: uppercase
+  letter-spacing: 1px
+  +r(700)
+    font-size: 24px
 
 .gallery
   display: grid
@@ -304,7 +316,7 @@ img
       font-size: 16px
       margin-bottom: 40px 
 
-form
+.form
   text-align: center
   font-size: 0
   input[type='email']
@@ -324,29 +336,6 @@ form
       font-size: 16px
       font-weight: 400
       color: #fffefe
-
-.btn_ready
-  font-family: $font-stack
-  font-size: 18px
-  font-weight: 400
-  position: relative
-  height: 65px
-  display: inline-block
-  overflow: hidden
-  box-sizing: border-box
-  padding: 0 46px 0 27px
-  cursor: pointer
-  transition: background-color ease .3s, color ease .3s
-  text-align: center
-  text-decoration: none
-  text-transform: uppercase
-  color: #ff8400
-  border-radius: 5px
-  background-color: white
-  box-shadow: 0 0 25px rgba(255, 132, 0, 0.65)
-  &:hover, &:focus, &:active
-    border-radius: 50px
-    outline: 0  
 
 .footer
   padding: 63px 0 41px
@@ -371,17 +360,16 @@ form
     justify-self: start
     +r(490)
       justify-self: center
+  &__copyright
+    font-family: $font-stack
+    font-size: 16px
+    font-weight: 400
+    color: #5c5c5c
   &__right
     justify-self: end
     +r(490)
       justify-self: center
-      
-.copyright
-  font-family: $font-stack
-  font-size: 16px
-  font-weight: 400
-  color: #5c5c5c
-  
+
 .social
   display: grid
   grid-column-gap: 39px
